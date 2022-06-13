@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/fondoCrearCliente"
+    android:background="@drawable/fondosecundarioazul"
+    android:paddingHorizontal="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        style="@style/shadoweffect"
+        android:textColor="@color/black"
+        android:layout_marginBottom="2dp"
+        android:text="Ingrese su PIN"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="45dp"/>
+    <View
+        android:id="@+id/barraTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/azul"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:src="@drawable/pinseguridad" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/rojo"
+        android:textStyle="bold"
+        android:text="Recuerda que el PIN que ingreses, se usara para validaciones en las transacciones en el corresponsal, NO LO OLVIDES."/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:paddingHorizontal="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txt_ingrese_pin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textAlignment="center"
+            android:maxLength="4"
+            android:inputType="numberPassword"
+            android:background="@drawable/fondo_button_azul_borde"
+            android:hint="PIN"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_aceptar_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#2196F3"
+                android:text="Confirmar"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancelar_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:strokeColor="#2196F3"
+                android:textColor="#2196F3"
+                app:strokeWidth="1dp"
+                android:backgroundTint="@color/white"
+                android:text="Cancelar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

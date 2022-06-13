@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/fondoCrearCliente"
+    android:background="@drawable/fondosecundarioazul"
+    android:paddingHorizontal="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        style="@style/shadoweffect"
+        android:textColor="@color/black"
+        android:layout_marginBottom="2dp"
+        android:text="Confirmar datos clientes"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+    <View
+        android:id="@+id/barraTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/azul"/>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:id="@+id/relativeLayoutCliente2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/fondo_button_azul_borde_blanco"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="30dp"
+            android:text="Señor/a"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_nombre_confirmacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="107dp"
+            android:layout_marginTop="32dp"
+            android:text="Nombre Cliente"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="39dp"
+            android:text="Idenficado con numero de cedula"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txt_saldo_confirmacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="-22dp"
+            android:text="Saldo Inicial"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/azul"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="80sp"
+            android:layout_marginTop="123dp"
+            android:text="su saldo inicial sera"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_numero_cedular_confirmacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="90dp"
+            android:text="Numero Cedula"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textColor="@color/azul"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signo_dinero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_saldo_confirmacion"
+            android:layout_marginEnd="-110dp"
+            android:layout_toStartOf="@+id/txt_saldo_confirmacion"
+            android:fontFamily="@font/ubuntu_bold"
+            android:paddingLeft="20dp"
+            android:text="$"
+            android:textColor="@color/azul"
+            android:textSize="25sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutCliente"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="-190dp"
+        android:layout_marginStart="50dp"
+        android:background="@drawable/fondo_button_azul"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_confirmar_confirmacion_datos_cliente"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Confirmar"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancelar_confirmacion_datos_cliente"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:strokeColor="#2196F3"
+            android:textColor="#2196F3"
+            app:strokeWidth="1dp"
+            android:backgroundTint="@color/white"
+            android:text="Cancelar"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

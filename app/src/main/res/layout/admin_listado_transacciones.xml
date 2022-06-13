@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:text="Historial de transacciones"
+            style="@style/shadoweffect"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+
+
+        <ImageView
+            android:id="@+id/volver"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/ic_flecha_naranja"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/naranja"/>
+
+
+    <SearchView
+        android:id="@+id/txtBuscar"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:inputType="textPersonName"
+        android:background="@drawable/fondo_button_naranaja_borde"
+        android:layout_height="50sp" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listadoTransacciones"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

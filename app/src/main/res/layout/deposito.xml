@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondosecundario"
+    android:paddingHorizontal="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        style="@style/shadoweffect"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/black"
+        android:text="Deposito"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="70dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/naranja"/>
+
+    <TextView
+        android:id="@+id/saldo_insuficiente_corresponsal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textColor="@color/colorError"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:paddingHorizontal="30dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#787676"
+            android:layout_marginTop="10dp"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/cedula_a_depositar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:layout_marginTop="25dp"
+                android:maxLength="13"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:background="@drawable/fondo_button_naranaja_borde"
+                android:hint="Número de cédula que depositar"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#787676"
+            android:layout_marginTop="10dp"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/cedula_que_deposita"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:layout_marginTop="25dp"
+                android:inputType="number"
+                android:maxLength="13"
+                android:textStyle="bold"
+                android:background="@drawable/fondo_button_naranaja_borde"
+                android:hint="Número de cedula a deposita"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#787676"
+            android:layout_marginTop="10dp"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/valor_a_depositar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:maxLength="9"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/fondo_button_naranaja_borde"
+                android:hint="Valor a depositar"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirmar_deposito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/naranja"
+                android:text="Confirmar"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelar_deposito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:strokeColor="@color/naranja"
+                android:textColor="@color/naranja"
+                app:strokeWidth="1dp"
+                android:backgroundTint="@color/white"
+                android:text="Cancelar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

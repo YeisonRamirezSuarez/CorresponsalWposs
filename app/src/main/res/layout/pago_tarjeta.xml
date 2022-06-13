@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondosecundario"
+    android:paddingHorizontal="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        style="@style/shadoweffect"
+        android:textColor="@color/black"
+        android:layout_marginBottom="2dp"
+        android:text="Pago con tarjeta"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="45dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/naranja"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_agregar_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#787676"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/numero_tarjeta_pago_tarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingStart="20dp"
+                android:maxLength="19"
+                android:textSize="26dp"
+                android:textStyle="bold"
+                android:textColor="@color/gris_banco"
+                android:background="@drawable/fondo_button_naranja_borde_blanco"
+                android:inputType="phone"
+                android:hint="Número de tarjeta"
+                android:layout_marginTop="25dp"
+                android:textColorHint="#787676"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#787676"
+                app:hintTextColor="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <EditText
+                    android:id="@+id/cvv_tarjeta_pago_tarjeta"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:hint="CVV"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorError"
+                    android:background="@drawable/fondo_button_naranja_borde_blanco"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingStart="20dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#787676"
+                app:hintTextColor="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <EditText
+                    android:id="@+id/mes_vencimiento_pago_tarjeta"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/fondo_button_naranja_borde_blanco"
+                    android:hint="mes"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    android:layout_marginStart="110dp"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/azul"
+                    android:textStyle="bold"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#787676"
+                app:hintTextColor="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <EditText
+                    android:id="@+id/dia_vencimiento_pago_tarjeta"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="200dp"
+                    android:background="@drawable/fondo_button_naranja_borde_blanco"
+                    android:hint="año"
+                    android:textSize="20dp"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textAlignment="center"
+                    android:paddingStart="20dp"
+                    android:textColor="@color/azul"
+                    android:textStyle="bold"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </RelativeLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#787676"
+            android:layout_marginTop="10dp"
+            app:hintTextColor="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/nombre_cliente_pago_tarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="20dp"
+                android:inputType="textCapCharacters"
+                android:background="@drawable/fondo_button_naranja_borde_blanco"
+                android:maxLength="70"
+                android:textStyle="bold"
+                android:digits="ABCDEFGHIJKLMNÑOPQRSTUVWXYZ "
+                android:hint="Nombre cliente"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Cuotas: "
+                android:textStyle="bold"
+                android:textColor="@color/naranja"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner_cuotas_pago_tarjeta"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="15sp"
+                android:prompt="@string/spinner_name"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/naranja" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#787676"
+            android:layout_marginTop="10dp"
+            app:hintTextColor="#171717"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:id="@+id/valor_a_pagar_pago_tarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingStart="20dp"
+                android:maxLength="7"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:inputType="number"
+                android:background="@drawable/fondo_button_naranja_borde_blanco"
+                android:layout_marginTop="10dp"
+                android:hint="Valor a pagar"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirmar_pago_tarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/naranja"
+                android:textColor="@color/white"
+                android:text="Confirmar"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelar_pago_tarjeta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:strokeColor="@color/naranja"
+                android:textColor="@color/naranja"
+                app:strokeWidth="1dp"
+                android:backgroundTint="@color/white"
+                android:text="Cancelar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

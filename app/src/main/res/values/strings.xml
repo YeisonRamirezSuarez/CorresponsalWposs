@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">BancoWpossMVP</string>
+    <string name="spinner_name">Seleccione numero de cuotas</string>
+
+    <string name="buscador_cliente">Ingrese el numero de cédula</string>
+    <string name="buscador_corresponsal">Ingrese el numero de nit</string>
+    <string name="buscador_transaccion">Nombre de la transacción</string>
+
+    <string name="close_app">Close app</string>
+    <string name="dialog_message">AlerDialog</string>
+    <string name="dialog_title">GBAndroidBlogs</string>
+    <string name="success">Success</string>
+    <string name="warning">Warning</string>
+    <string name="error">Error</string>
+
+    <string name="success_title">Correcto</string>
+    <string name="warning_title">Atencion proceso cancelar</string>
+    <string name="error_title">Error en la accion</string>
+    <string name="vacio_title">Campo obligatorio</string>
+    <string name="dummy_text">¿Seguro que deseas cancelar la operacion actual?</string>
+    <string name="dummy_text1">¿Error al realizar la operacion actual?</string>
+    <string name="dummy_text2">¿Felicitaciones en la operacion?</string>
+    <string name="dummy_text3">¡Completa la informacion solicitada!</string>
+    <string name="okay">Listo</string>
+    <string name="yes">Si</string>
+    <string name="no">No</string>
+
+
+    <string-array name="cuotas">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+
+    </string-array>
+
+</resources>

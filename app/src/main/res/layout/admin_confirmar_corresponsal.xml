@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondosecundarioazul"
+    android:paddingHorizontal="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="2dp"
+        android:text="Confirmar datos corresponsal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="26dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/azul"/>
+
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/fondo_button_azul_borde_blanco"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="162dp"
+            android:text="Corresponsal"
+            android:textColor="@color/black"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/txt_nombre_confirmacion_corresponsal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="31dp"
+            android:text="Nombre Cliente"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="49dp"
+            android:layout_marginEnd="39dp"
+            android:text="Idenficado con numero de NIT"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="39dp"
+            android:text="Correo electronico corresponsal"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/txt_saldo_confirmacion_corresponsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginEnd="-22dp"
+            android:text="Saldo Inicial"
+            android:textAlignment="center"
+            android:textColor="@color/azul"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="80sp"
+            android:layout_marginTop="130dp"
+            android:text="su saldo inicial sera"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txt_numero_nit_confirmacion_corresponsal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="98dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="85dp"
+            android:text="Numero Cedula"
+            android:textAlignment="center"
+            android:textColor="@color/azul"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_correo_confirmacion_corresponsal"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="107dp"
+            android:layout_marginEnd="43dp"
+            android:gravity="center"
+            android:text="correo electronico"
+            android:textAlignment="center"
+            android:textColor="@color/azul"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/signo_dinero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txt_saldo_confirmacion_corresponsal"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="-120dp"
+            android:layout_toStartOf="@+id/txt_saldo_confirmacion_corresponsal"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="$"
+            android:textColor="@color/azul"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-190dp"
+        android:background="@drawable/fondo_button_azul"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_confirmar_confirmacion_datos_corresponsal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#2196F3"
+            android:text="Confirmar"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancelar_confirmacion_datos_corresponsal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:strokeColor="#2196F3"
+            android:textColor="#2196F3"
+            app:strokeWidth="1dp"
+            android:backgroundTint="@color/white"
+            android:text="Cancelar"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

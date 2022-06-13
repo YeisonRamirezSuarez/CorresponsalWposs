@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/fondoCrearCliente"
+    android:background="@drawable/fondosecundarioazul"
+    android:paddingHorizontal="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        style="@style/shadoweffect"
+        android:textColor="@color/black"
+        android:layout_marginBottom="2dp"
+        android:text="Tarjeta cliente"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="52sp"/>
+    <View
+        android:id="@+id/barraTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/azul"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tarjeta"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:paddingTop="40dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="350dp"
+        android:layout_height="223dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50sp"
+        android:background="@drawable/card_azul">
+
+        <TextView
+            android:id="@+id/nombre_tarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="136dp"
+            android:paddingStart="30sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="YEISON FABIAN RAMIREZ SUAREZ"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/num_cuenta_tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:text="0000 0000 0000 0000"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/cvv_tarjeta"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.529"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:paddingLeft="20dp"
+            android:paddingBottom="20dp"
+            android:text="CVV"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/cvv_tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:paddingLeft="10dp"
+            android:paddingBottom="20dp"
+            android:text="123"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/saldo_tarjeta"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textView2" />
+
+        <ImageView
+            android:id="@+id/iv_tipo_tarjeta"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/mastercard"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fecha_tarjeta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:padding="20dp"
+            android:text="05/25"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+
+            android:id="@+id/saldo_tarjeta"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="1.000.000"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/signo_dinero"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_tarjeta"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/signo_dinero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="$"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/saldo_tarjeta"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/cvv_tarjeta"
+            app:layout_constraintTop_toBottomOf="@+id/nombre_tarjeta"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_aceptar_tarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        app:strokeColor="#2196F3"
+        android:textColor="#2196F3"
+        app:strokeWidth="1dp"
+        android:backgroundTint="@color/white"
+        android:text="Aceptar"/>
+</LinearLayout>
+
+

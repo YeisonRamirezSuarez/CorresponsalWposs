@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondosecundarioazul"
+    android:paddingHorizontal="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        style="@style/shadoweffect"
+        android:textColor="@color/azul"
+        android:text="Crear un corresponsal"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="2dp"
+        android:textSize="37sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/azul"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#787676"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:id="@+id/nombre_registrar"
+            android:layout_width="match_parent"
+            android:drawableLeft="@drawable/ic_coolicon_name_azul"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:maxLength="30"
+            android:digits=" ABCDEFGHIJKLMNÑOPQRSTUVWXYZ"
+            android:inputType="textCapCharacters"
+            android:textSize="20sp"
+            android:layout_marginTop="7dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NIT"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#787676"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:id="@+id/cedula_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:drawablePadding="20dp"
+            android:maxLength="13"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_cedula_azul"
+            android:layout_marginTop="7dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CORREO ELECTRÓNICO"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#787676"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:id="@+id/correo_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_coolicon_email_azul"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="7dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTRASEÑA"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#787676"
+        android:layout_marginTop="10dp"
+        app:hintTextColor="@color/black"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+        <EditText
+            android:id="@+id/contrasena_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="20dp"
+            android:textSize="20sp"
+            android:drawableLeft="@drawable/ic_lock_azul"
+            android:inputType="textPassword"
+            android:layout_marginTop="7dp"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="20dp"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_registrarse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:cornerRadius="180dp"
+            app:strokeColor="@color/gris"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:paddingStart="20sp"
+            android:fontFamily="@font/ubuntu_bold"
+            android:backgroundTint="@color/azul"
+            android:text="Registrarse"
+            android:textColor="@color/white"
+            android:layout_weight=".1"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:layout_weight=".1"
+
+            android:layout_gravity="center"
+            android:backgroundTint="@null"
+            android:fontFamily="@font/ubuntu_medium"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            app:cornerRadius="180dp"
+            app:strokeColor="@color/azul"
+            android:textAllCaps="false"
+            android:textColor="@color/azul"
+            android:textSize="16sp"
+            app:backgroundTint="@color/white" />
+    </LinearLayout>
+</LinearLayout>

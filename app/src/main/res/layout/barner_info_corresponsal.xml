@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:id="@+id/infoUserBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="340dp"
+            android:layout_marginStart="-70dp"
+            android:layout_marginTop="-160dp"
+            android:background="@drawable/ic_corresponsal"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="180dp">
+
+
+                <TextView
+                    android:id="@+id/nameUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textAllCaps="true"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Nombre Corresponal" />
+
+                <TextView
+                    android:id="@+id/saldoUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="italic"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView3"
+                    tools:text="saldo Usuario" />
+
+
+                <TextView
+                    android:id="@+id/stateUser"
+                    android:layout_width="228dp"
+                    android:drawableLeft="@drawable/money"
+                    android:drawableTint="@color/teal_700"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/teal_700"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4"
+                    tools:text="Numero cuenta Usuario" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/regresarLogin"
+            android:layout_width="63dp"
+            android:layout_height="60dp"
+            android:layout_gravity="end"
+            android:onClick="showPopupCorresponsal"
+            android:layout_marginTop="-180dp"
+            android:layout_marginBottom="90dp"
+            android:background="@drawable/ic_menu_naranaja" />
+
+    </LinearLayout>+
+</LinearLayout>

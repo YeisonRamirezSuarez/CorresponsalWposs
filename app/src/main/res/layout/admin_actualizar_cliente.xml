@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondosecundarioazul"
+    android:paddingHorizontal="20dp">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ubuntu_bold"
+        style="@style/shadoweffect"
+        android:layout_marginTop="70dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="2dp"
+        android:text="Actualizar cliente"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="40dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/azul"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:paddingHorizontal="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/actualizar_nombre_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:paddingStart="20sp"
+            android:focusable="false"
+            android:textColor="@color/gris_banco"
+            android:background="@drawable/fondo_button_azul_borde"
+            android:hint="NOMBRE CLIENTE"/>
+
+        <EditText
+            android:id="@+id/actualizar_numero_de_cedula"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="@color/gris_banco"
+            android:paddingStart="20sp"
+            android:focusable="false"
+            android:inputType="number"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/fondo_button_azul_borde"
+            android:hint="Número de Cedula"/>
+
+        <EditText
+            android:id="@+id/actualizar_pin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="20sp"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:visibility="gone"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/fondo_button_azul_borde"
+            android:hint="PIN nuevo"/>
+
+
+        <EditText
+            android:id="@+id/actualizar_pin_confirmar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingStart="20sp"
+            android:visibility="gone"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/fondo_button_azul_borde"
+            android:hint="Confirmar PIN nuevo"/>
+
+
+        <LinearLayout
+            android:id="@+id/linerBotonesActualizacion"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/confirmar_actualizacion_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azul"
+                android:text="Confirmar"/>
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelar_actualizacion_cliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:strokeColor="@color/azul"
+                android:textColor="@color/azul"
+                app:strokeWidth="1dp"
+                android:backgroundTint="@color/white"
+                android:text="Cancelar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearbtnActualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnActualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/azul"
+                android:text="Actualizar"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

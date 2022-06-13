@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/fondosecundario"
+    android:paddingHorizontal="20dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="@font/ubuntu_bold"
+        android:gravity="center"
+        android:text="Confirmación"
+        style="@style/shadoweffect"
+        android:textColor="@color/black"
+        android:textSize="45dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/naranja"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Estimado:"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/nombreClienteConfirmacionRetiro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="YEISON FABIAN RAMIREZ SUAREZ"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:text="Desea realizalizara un retiro al numero de cuenta :"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/numereCuentaRetiro"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:text="1005315932"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="Por un valor de :"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/montoConfirmacionRetiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:drawableStart="@drawable/money"
+        android:drawableTint="@color/naranja"
+        android:text="1.000.000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/naranja"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:text="Recuerde que esta acción tiene un cargo de 2.000 pesos directamente en su cuenta WPOSS."
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@color/gris_banco"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20sp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_confirmar_confirmacion_datos_cliente_proceso_retiro"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/naranja"
+            android:text="Confirmar"/>
+
+        <View
+            android:layout_width="40dp"
+            android:layout_height="match_parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancelar_confirmacion_datos_cliente_proceso_retiro"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:strokeColor="@color/naranja"
+            android:textColor="@color/naranja"
+            app:strokeWidth="1dp"
+            android:backgroundTint="@color/white"
+            android:text="Cancelar"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
