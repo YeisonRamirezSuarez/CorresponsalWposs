@@ -55,6 +55,7 @@ import com.activity.bancowpossmvp.Modelos.Transacciones;
 import com.activity.bancowpossmvp.Modelos.Varios;
 import com.activity.bancowpossmvp.tools.Metodos;
 import com.google.android.material.button.MaterialButton;
+import com.wajahatkarim3.easyflipview.EasyFlipView;
 
 
 import java.text.DateFormat;
@@ -2360,12 +2361,17 @@ public class MainActivity extends AppCompatActivity implements Interface.View, M
             clientes = listaCliente.get(0);
         }
 
+
         nombre_tarjeta = findViewById(R.id.nombre_tarjeta);
         saldo_tarjeta = findViewById(R.id.saldo_tarjeta);
         num_cuenta_tarjeta = findViewById(R.id.num_cuenta_tarjeta);
         cvv_tarjeta = findViewById(R.id.cvv_tarjeta);
         fecha_tarjeta = findViewById(R.id.fecha_tarjeta);
         tipo_tarjeta = findViewById(R.id.iv_tipo_tarjeta);
+        final EasyFlipView easyFlipView2 = (EasyFlipView) findViewById(R.id.tarjeta);
+        easyFlipView2.setFlipDuration(900);
+        easyFlipView2.setToHorizontalType();
+        easyFlipView2.setFlipTypeFromLeft();
         btn_aceptar_tarjeta = findViewById(R.id.btn_aceptar_tarjeta);
         btn_aceptar_tarjeta.setOnClickListener(new View.OnClickListener() {
             @Override
