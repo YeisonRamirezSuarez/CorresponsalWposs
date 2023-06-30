@@ -1,45 +1,64 @@
-**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
+# Banking Transactions App - Android
 
-When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
+This project is a Java Android application that facilitates banking transactions, including card sales, viewing customer balances, and transfers. The app features a banking login system where banks can create customers and correspondents. Active correspondents generate sales, earning bonuses for their sales.
 
-*We recommend that you open this README in another tab as you perform the tasks below. You can [watch our video](https://youtu.be/0ocf7u76WSo) for a full demo of all the steps in this tutorial. Open the video in a new tab to avoid leaving Bitbucket.*
+## Key Features
 
----
+- User Registration: Banks can register new customers and correspondents.
+- Banking Login: Customers and correspondents can log in using their credentials.
+- Card Sales: Customers can make sales transactions using their cards.
+- Customer Balances: Customers can view their account balances.
+- Transfers: Customers can transfer funds between accounts.
+- Correspondent Sales: Active correspondents can generate sales transactions.
+- Sales Bonuses: Correspondents receive bonuses for their sales transactions.
 
-## Edit a file
+## Prerequisites
 
-You’ll start by editing this README file to learn how to edit a file in Bitbucket.
+- Android Studio installed on your local machine.
+- Basic knowledge of Java and Android app development.
 
-1. Click **Source** on the left side.
-2. Click the README.md link from the list of files.
-3. Click the **Edit** button.
-4. Delete the following text: *Delete this line to make a change to the README from Bitbucket.*
-5. After making your change, click **Commit** and then **Commit** again in the dialog. The commit page will open and you’ll see the change you just made.
-6. Go back to the **Source** page.
+## Installation
 
----
+1. Clone this repository to your local machine:
 
-## Create a file
+```
+git [https://github.com/YeisonRamirezSuarez/CorresponsalWposs.git]
+```
 
-Next, you’ll add a new file to this repository.
+2. Open the project in Android Studio.
 
-1. Click the **New file** button at the top of the **Source** page.
-2. Give the file a filename of **contributors.txt**.
-3. Enter your name in the empty file space.
-4. Click **Commit** and then **Commit** again in the dialog.
-5. Go back to the **Source** page.
+3. Sync the project dependencies and ensure all libraries are correctly configured.
 
-Before you move on, go ahead and explore the repository. You've already seen the **Source** page, but check out the **Commits**, **Branches**, and **Settings** pages.
+4. Connect an Android device or start an emulator in Android Studio.
 
----
+5. Run the application on your device or emulator.
 
-## Clone a repository
+## Usage
 
-Use these steps to clone from SourceTree, our client for using the repository command-line free. Cloning allows you to work on your files locally. If you don't yet have SourceTree, [download and install first](https://www.sourcetreeapp.com/). If you prefer to clone from the command line, see [Clone a repository](https://confluence.atlassian.com/x/4whODQ).
+1. Launch the app and you will be presented with the login screen.
 
-1. You’ll see the clone button under the **Source** heading. Click that button.
-2. Now click **Check out in SourceTree**. You may need to create a SourceTree account or log in.
-3. When you see the **Clone New** dialog in SourceTree, update the destination path and name if you’d like to and then click **Clone**.
-4. Open the directory you just created to see your repository’s files.
+2. Log in using your customer or correspondent credentials.
 
-Now that you're more familiar with your Bitbucket repository, go ahead and add a new file locally. You can [push your change back to Bitbucket with SourceTree](https://confluence.atlassian.com/x/iqyBMg), or you can [add, commit,](https://confluence.atlassian.com/x/8QhODQ) and [push from the command line](https://confluence.atlassian.com/x/NQ0zDQ).
+3. Once logged in, customers can make sales transactions, view their account balances, and perform transfers. Correspondents can generate sales transactions and receive bonuses.
+
+## Contribution
+
+If you would like to contribute to this project, you can follow these steps:
+
+1. Fork this repository and clone it to your local machine.
+
+2. Make your changes or improvements in a separate branch.
+
+3. Submit a pull request explaining your changes and the benefits they bring.
+
+## License
+
+This project is distributed under the [MIT license](LICENSE).
+
+## Acknowledgments
+
+We would like to thank all the open-source software developers who have contributed to the libraries and tools used in this project.
+
+## Contact
+
+If you have any questions or suggestions, feel free to contact the development team at [yeisonfabianramirezsuarez@gmail.com].
